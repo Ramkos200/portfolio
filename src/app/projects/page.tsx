@@ -3,7 +3,6 @@
 import { useState, useRef } from "react";
 import {
   ExternalLink,
-  Github,
   Video,
   Image,
   Filter,
@@ -22,7 +21,7 @@ const projects = [
     tags: ["React", "filament", "laravel", "TypeScript", "Stripe", "MySQL"],
     image: "/projects/multivendor-ecom.jpg",
     video: "/projects/multivendor-ecom.mp4",
-    github: "https://github.com/Ramkos200",
+
     featured: true,
   },
   // {
@@ -34,7 +33,7 @@ const projects = [
   //   tags: ["React", "laravel", "TypeScript", "MySQL"],
   //   image: "/projects/spa.jpg",
   //   video: "/projects/spa.mp4",
-  //   github: "https://github.com/Ramkos200",
+  //
   //   featured: true,
   // },
   {
@@ -45,7 +44,6 @@ const projects = [
     tags: ["Blade", "laravel", "Tailwind", "MySQL"],
     image: "/projects/mynotes.jpg",
     video: "/projects/mynotes.mp4",
-    github: "https://github.com/Ramkos200",
   },
   {
     id: 4,
@@ -56,7 +54,6 @@ const projects = [
     tags: ["Blade", "laravel", "Tailwind", "MySQL"],
     image: "/projects/mygym.jpg",
     video: "/projects/mygym.mp4",
-    github: "https://github.com/Ramkos200",
   },
   {
     id: 5,
@@ -66,7 +63,6 @@ const projects = [
     tags: ["React", "Blade", "laravel", "Tailwind", "MySQL", "API"],
     image: "/projects/e-commerce-website.jpg",
     video: "/projects/e-commerce-website.mp4",
-    github: "https://github.com/Ramkos200",
   },
   {
     id: 6,
@@ -76,7 +72,6 @@ const projects = [
     tags: ["Blade", "laravel", "Tailwind", "MySQL"],
     image: "/projects/smart-task-manager.jpg",
     video: "/projects/smart-task-manager.mp4",
-    github: "https://github.com/Ramkos200",
   },
 ];
 
@@ -240,21 +235,6 @@ export default function ProjectsPage() {
                       </span>
                     ))}
                   </div>
-
-                  {/* Links */}
-                  <div className="flex justify-between items-center">
-                    <div className="flex gap-4">
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-emerald-700 hover:text-emerald-900 transition-colors"
-                      >
-                        <Github className="w-4 h-4" />
-                        <span className="text-sm">Code</span>
-                      </a>
-                    </div>
-                  </div>
                 </div>
               </div>
             </motion.div>
@@ -325,17 +305,6 @@ export default function ProjectsPage() {
                       {tag}
                     </span>
                   ))}
-                </div>
-                <div className="flex justify-end">
-                  <a
-                    href={getCurrentVideoProject()?.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 px-3 py-1.5 bg-emerald-600 text-white text-sm rounded-lg hover:bg-emerald-700 transition-colors"
-                  >
-                    <Github className="w-3.5 h-3.5" />
-                    <span>Source Code</span>
-                  </a>
                 </div>
               </div>
             </motion.div>
