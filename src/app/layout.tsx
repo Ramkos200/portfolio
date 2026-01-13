@@ -31,7 +31,7 @@ export default function RootLayout({
         {/* Footer */}
         <footer className="relative z-10 py-12 px-4 text-center text-emerald-800/60">
           <p className="text-sm">
-            © {new Date().getFullYear()} Rami Samhouri. A Journey to keep
+            © {new Date().getFullYear()}MHD.Rami Samhouri. A Journey to keep
             learning.
           </p>
         </footer>
